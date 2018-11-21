@@ -1,0 +1,6 @@
+services:
+    Effiana\CacheBundle\Command\InvalidateCacheScheduleCommand:
+        public: false
+        class: Effiana\CacheBundle\Command\InvalidateCacheScheduleCommand
+        tags:
+            - { name: console.command }

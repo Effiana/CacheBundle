@@ -1,0 +1,6 @@
+services:
+    effiana_cache.config_cache_warmer.listener:
+        class: Effiana\CacheBundle\EventListener\CacheWarmerListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+            - { name: kernel.event_listener, event: console.command, method: onConsoleCommand }
