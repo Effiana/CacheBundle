@@ -25,7 +25,6 @@ class EffianaCacheExtension extends Extension implements PrependExtensionInterfa
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
-        $loader->load('commands.yml');
 
         if ($container->getParameter('kernel.debug')) {
             $loader->load('debug.yml');
@@ -41,9 +40,9 @@ class EffianaCacheExtension extends Extension implements PrependExtensionInterfa
             'validation' => [
                 'cache' => 'effiana_cache.validation_cache.doctrine',
             ],
-            'serializer' => [
-                'cache' => 'effiana_cache.serializer',
-            ],
+//            'serializer' => [
+//                'cache' => 'effiana_cache.serializer',
+//            ],
             'annotations' => [
                 'cache' => 'effiana_cache.annotations',
             ],
