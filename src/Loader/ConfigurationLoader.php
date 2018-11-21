@@ -2,8 +2,8 @@
 
 namespace Effiana\CacheBundle\Loader;
 
-use Oro\Component\Config\Loader\CumulativeConfigLoader;
-use Oro\Component\Config\Loader\YamlCumulativeFileLoader;
+use Effiana\CacheBundle\Config\Loader\CumulativeConfigLoader;
+use Effiana\CacheBundle\Config\Loader\YamlCumulativeFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;

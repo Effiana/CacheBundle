@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b91fa6d0-4e6c-4782-ac44-50f6bbf169d3" name="Default Changelist" comment="" />
+    <list default="true" id="b91fa6d0-4e6c-4782-ac44-50f6bbf169d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/CumulativeResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/CumulativeResourceInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Dumper/ConfigMetadataDumperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Dumper/CumulativeConfigMetadataDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Loader/CumulativeConfigLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Loader/CumulativeFileLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Loader/CumulativeResourceLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Loader/CumulativeResourceLoaderCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/Loader/YamlCumulativeFileLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CacheBundle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CacheBundle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/DataStorage/InvalidateCacheDataStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Handler/InvalidateCacheActionHandlerInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Handler/InvalidateCacheActionScheduledHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Handler/InvalidateCacheScheduleArgumentsBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Handler/InvalidateCacheScheduleArgumentsBuilderInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Provider/InvalidateCacheTimeProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Transformer/DateTimeToCronFormatTransformer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Transformer/DateTimeToStringTransformerInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/InvalidateCacheScheduleCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheConfigurationPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheConfigurationPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheWarmerPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheWarmerPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventListener/CacheWarmerListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/CacheWarmerListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader/ConfigurationLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader/ConfigurationLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/OroDataCacheManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/OroDataCacheManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/oro/actions.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/oro/bundles.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/requirejs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/doc/caching_policy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/public/js/app/components/invalidate-cache-component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/translations/messages.en.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/views/Action/invalidate.html.twig" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,54 +62,68 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="php" value="2" />
+          <entry key="php" value="31" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="2" />
+          <entry key="PHP" value="31" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="33" />
-          <entry key="json" value="26" />
+          <entry key="dummy" value="83" />
+          <entry key="json" value="39" />
+          <entry key="php" value="83" />
+          <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="26" />
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="JSON" value="39" />
+          <entry key="PHP" value="83" />
+          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="YAML" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.class">
+        <counts>
+          <entry key="PHP Class.type" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Loader/ConfigurationLoader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-357">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding>
+                <element signature="e#46#101#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+        <entry file="file://$PROJECT_DIR$/src/Config/Loader/CumulativeFileLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/InvalidateCacheScheduleCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/OroCacheBundle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="-934">
+              <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -80,19 +133,49 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Oro\Bundle\CacheBundle</find>
+      <find>oro_cache</find>
+      <find>CompilerPassInterface</find>
+      <find>$this-&gt;cacheMap</find>
+      <find>oro</find>
+      <find>oro.cache</find>
+      <find>.oro_data</find>
+      <find>deferredScheduler</find>
+      <find>effiana_cache.action.transformer.datetime_to_cron_format</find>
+      <find>Oro</find>
     </findStrings>
     <replaceStrings>
       <replace>Effiana\CacheBundle</replace>
+      <replace>effiana_cache</replace>
+      <replace>effiana.cache</replace>
+      <replace>.effiana_data</replace>
+      <replace>Effiana</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Command/InvalidateCacheScheduleCommand.php" />
+        <option value="$PROJECT_DIR$/src/DependencyInjection/EffianaCacheExtension.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Config/Dumper/ConfigMetadataDumperInterface.php" />
+        <option value="$PROJECT_DIR$/src/Config/Dumper/CumulativeConfigMetadataDumper.php" />
+        <option value="$PROJECT_DIR$/src/Config/Loader/CumulativeConfigLoader.php" />
+        <option value="$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheWarmerPass.php" />
+        <option value="$PROJECT_DIR$/src/Loader/ConfigurationLoader.php" />
+        <option value="$PROJECT_DIR$/src/EventListener/CacheWarmerListener.php" />
+        <option value="$PROJECT_DIR$/src/Config/Loader/YamlCumulativeFileLoader.php" />
+        <option value="$PROJECT_DIR$/src/Effiana/CacheBundle/Config/Loader/CumulativeResourceLoader.php" />
+        <option value="$PROJECT_DIR$/src/Config/CumulativeResource.php" />
+        <option value="$PROJECT_DIR$/src/Effiana/CacheBundle/Config/Loader/CumulativeResourceLoaderCollection.php" />
+        <option value="$PROJECT_DIR$/src/Config/CumulativeResourceInfo.php" />
+        <option value="$PROJECT_DIR$/src/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Config/Loader/CumulativeFileLoader.php" />
       </list>
     </option>
   </component>
@@ -102,30 +185,39 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
       <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -134,6 +226,7 @@
     <option name="width" value="1855" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -155,7 +248,14 @@
               <item name="CacheBundle" type="b2602c69:ProjectViewProjectNode" />
               <item name="CacheBundle" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Command" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheBundle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,10 +268,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Config/Loader" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -209,10 +310,10 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32985386" />
+      <window_info anchor="bottom" id="Terminal" weight="0.33054394" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -231,24 +332,201 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/OroCacheBundle.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/SPL/SPL_c1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="310">
+          <caret line="1886" column="6" selection-start-line="1886" selection-start-column="6" selection-end-line="1886" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/InvalidateCacheScheduleCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/Config/Dumper/ConfigMetadataDumperInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Dumper/CumulativeConfigMetadataDumper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#290#0#PHP" expanded="true" />
+            <element signature="e#318#374#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheWarmerPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/Compiler/CacheConfigurationPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#68#108#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/EffianaCacheExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#59#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EffianaCacheBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EventListener/CacheWarmerListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#59#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Loader/CumulativeConfigLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#338#388#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Loader/CumulativeResourceLoaderCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/CumulativeResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+          <folding>
+            <element signature="e#331#388#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/CumulativeResourceInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Loader/CumulativeResourceLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#338#382#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Loader/YamlCumulativeFileLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#318#370#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Loader/ConfigurationLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#46#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/Transformer/DateTimeToCronFormatTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/Handler/InvalidateCacheActionHandlerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/Handler/InvalidateCacheActionScheduledHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/InvalidateCacheScheduleCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="20" column="82" lean-forward="true" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+          <folding>
+            <element signature="e#47#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/config/oro/actions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config/Loader/CumulativeFileLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-934">
+          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
         </state>
       </provider>
     </entry>

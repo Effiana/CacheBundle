@@ -1,2 +1,0 @@
-bundles:
-    - { name: Effiana\CacheBundle\OroCacheBundle, priority: -260 }

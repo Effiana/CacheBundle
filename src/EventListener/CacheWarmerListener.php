@@ -3,7 +3,7 @@
 namespace Effiana\CacheBundle\EventListener;
 
 use Effiana\CacheBundle\Provider\ConfigCacheWarmerInterface;
-use Oro\Component\Config\Dumper\ConfigMetadataDumperInterface;
+use Effiana\CacheBundle\Config\Dumper\ConfigMetadataDumperInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 

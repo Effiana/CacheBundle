@@ -5,7 +5,7 @@ namespace Effiana\CacheBundle\Manager;
 use Doctrine\Common\Cache\ClearableCache;
 use Effiana\CacheBundle\Provider\SyncCacheInterface;
 
-class OroDataCacheManager
+class EffianaDataCacheManager
 {
     /**
      * @var array

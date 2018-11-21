@@ -1,13 +1,13 @@
 parameters:
-    effiana_cache.oro_data_cache_manager.class:                    Effiana\CacheBundle\Manager\OroDataCacheManager
+    effiana_cache.effiana_data_cache_manager.class:                    Effiana\CacheBundle\Manager\EffianaDataCacheManager
 
 services:
-    effiana_cache.oro_data_cache_manager:
-        class: '%effiana_cache.oro_data_cache_manager.class%'
+    effiana_cache.effiana_data_cache_manager:
+        class: '%effiana_cache.effiana_data_cache_manager.class%'
 
     effiana_cache.provider.validation:
         public: false
-        parent: oro.cache.abstract
+        parent: effiana.cache.abstract
         calls:
             - [ setNamespace, [ 'validation' ] ]
 
@@ -19,19 +19,19 @@ services:
 
     effiana_cache.annotations:
         public: false
-        parent: oro.cache.abstract
+        parent: effiana.cache.abstract
         calls:
-            - [ setNamespace, [ 'oro_annotations_cache' ] ]
+            - [ setNamespace, [ 'effiana_annotations_cache' ] ]
 
     effiana_cache.serializer:
         public: false
-        parent: oro.cache.abstract
+        parent: effiana.cache.abstract
         calls:
-            - [ setNamespace, [ 'oro_serializer_cache' ] ]
+            - [ setNamespace, [ 'effiana_serializer_cache' ] ]
 
     effiana_cache.jms_serializer:
         public: false
-        parent: oro.cache.abstract
+        parent: effiana.cache.abstract
         calls:
             - [ setNamespace, [ 'jms_serializer_cache' ] ]
 
@@ -42,33 +42,11 @@ services:
             - 'jms_serializer_cache'
             - '@effiana_cache.jms_serializer'
 
-    effiana_cache.action.handler.invalidate_scheduled:
-        class: 'Effiana\CacheBundle\Action\Handler\InvalidateCacheActionScheduledHandler'
-        arguments:
-            - '@oro_cron.deferred_scheduler'
-            - '@effiana_cache.action.handler.schedule_arguments_builder'
-            - '@effiana_cache.action.transformer.datetime_to_cron_format'
-
-    effiana_cache.action.handler.schedule_arguments_builder:
-        class: 'Effiana\CacheBundle\Action\Handler\InvalidateCacheScheduleArgumentsBuilder'
-        public: false
-
-    effiana_cache.action.provider.invalidate_cache_time:
-        class: 'Effiana\CacheBundle\Action\Provider\InvalidateCacheTimeProvider'
-        arguments:
-            - '@effiana_cache.action.handler.schedule_arguments_builder'
-            - '@oro_cron.schedule_manager'
-            - '@effiana_cache.action.transformer.datetime_to_cron_format'
-
-    effiana_cache.action.transformer.datetime_to_cron_format:
-        public: false
-        class: 'Effiana\CacheBundle\Action\Transformer\DateTimeToCronFormatTransformer'
-
-    oro.cache.memory_cache_chain:
+    effiana.cache.memory_cache_chain:
         public: false
         class: Effiana\CacheBundle\Provider\MemoryCacheChain
 
-    oro.cache.configuration_loader:
+    effiana.cache.configuration_loader:
         class: Effiana\CacheBundle\Loader\ConfigurationLoader
         calls:
             - [ setParameterBag, ['@=service("kernel").getContainer().getParameterBag()']]

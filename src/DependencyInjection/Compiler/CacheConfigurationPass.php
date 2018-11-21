@@ -17,13 +17,13 @@ use Symfony\Component\DependencyInjection\Reference;
 class CacheConfigurationPass implements CompilerPassInterface
 {
     /** this cache should be used to caching data private for each node in a web farm */
-    public const FILE_CACHE_SERVICE = 'oro.file_cache.abstract';
+    public const FILE_CACHE_SERVICE = 'effiana.file_cache.abstract';
     /** this cache should be used to caching data which need to be shared between nodes in a web farm */
-    public const DATA_CACHE_SERVICE = 'oro.cache.abstract';
-    /** the same as "oro.cache.abstract" but without additional in-memory caching */
-    public const DATA_CACHE_NO_MEMORY_SERVICE = 'oro.cache.abstract.without_memory_cache';
+    public const DATA_CACHE_SERVICE = 'effiana.cache.abstract';
+    /** the same as "effiana.cache.abstract" but without additional in-memory caching */
+    public const DATA_CACHE_NO_MEMORY_SERVICE = 'effiana.cache.abstract.without_memory_cache';
     /** data cache manager service */
-    public const MANAGER_SERVICE_KEY = 'effiana_cache.oro_data_cache_manager';
+    public const MANAGER_SERVICE_KEY = 'effiana_cache.effiana_data_cache_manager';
 
     /**
      * {@inheritdoc}
@@ -124,7 +124,7 @@ class CacheConfigurationPass implements CompilerPassInterface
      */
     private function getFilesystemCache($cacheDefinitionId)
     {
-        $path = $cacheDefinitionId === static::FILE_CACHE_SERVICE ? 'oro' : 'oro_data';
+        $path = $cacheDefinitionId === static::FILE_CACHE_SERVICE ? 'effiana' : 'effiana_data';
 
         $cacheDefinition = new Definition(
             FilesystemCache::class,

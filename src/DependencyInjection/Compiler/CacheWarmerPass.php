@@ -3,7 +3,7 @@
 namespace Effiana\CacheBundle\DependencyInjection\Compiler;
 
 use Effiana\CacheBundle\Provider\ConfigCacheWarmerInterface;
-use Oro\Component\Config\Dumper\ConfigMetadataDumperInterface;
+use Effiana\CacheBundle\Config\Dumper\ConfigMetadataDumperInterface;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Reference;
 class CacheWarmerPass implements CompilerPassInterface
 {
     const SERVICE_ID = 'effiana_cache.config_cache_warmer.listener';
-    const PROVIDER_TAG = 'oro.config_cache_warmer.provider';
+    const PROVIDER_TAG = 'effiana.config_cache_warmer.provider';
 
     /**
      * {@inheritdoc}
