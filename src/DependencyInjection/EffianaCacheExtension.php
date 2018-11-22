@@ -49,9 +49,5 @@ class EffianaCacheExtension extends Extension implements PrependExtensionInterfa
         ];
 
         $container->prependExtensionConfig('framework', $validationConfig);
-        $container->prependExtensionConfig(
-            'jms_serializer',
-            ['metadata' => ['cache' => 'effiana_cache.jms_serializer_adapter']]
-        );
     }
 }

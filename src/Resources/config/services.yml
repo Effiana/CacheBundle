@@ -35,13 +35,6 @@ services:
         calls:
             - [ setNamespace, [ 'jms_serializer_cache' ] ]
 
-    effiana_cache.jms_serializer_adapter:
-        public: false
-        class: 'Metadata\Cache\DoctrineCacheAdapter'
-        arguments:
-            - 'jms_serializer_cache'
-            - '@effiana_cache.jms_serializer'
-
     effiana.cache.memory_cache_chain:
         public: false
         class: Effiana\CacheBundle\Provider\MemoryCacheChain
