@@ -4,8 +4,8 @@
     "description": "Effiana Cache Bundle",
     "license": "MIT",
     "require": {
-        "php": "7.2.*",
-        "symfony/symfony": "4.*",
+        "php": "^7.2",
+        "symfony/framework-bundle": "^4.2",
         "doctrine/common": "2.*",
         "doctrine/dbal": "*",
         "doctrine/doctrine-bundle": "*",
